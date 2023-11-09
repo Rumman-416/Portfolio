@@ -29,7 +29,7 @@ const defaultOptions = {
 const Lang = () => {
   return (
     <div>
-      <div className="flex justify-center flex-col items-center h-52">
+      <div className="flex justify-center flex-col items-center h-52 my-28">
         <h1 className="text-white text-2xl ">known Languages</h1>
         <div className="flex gap-5 flex-wrap justify-center w-[80%]">
           <Tilt options={defaultOptions} style={{ height: 60, width: 60 }}>
