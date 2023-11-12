@@ -16,24 +16,24 @@ const Contact = () => {
         }}
       >
         <span className=" gap-10">
-          <label htmlFor="" className=" mx-6">
+          <label htmlFor="" className=" mx-4">
             Name:
           </label>
           <input
             type="text"
             placeholder="Enter your name"
-            className="mx-2 bg-black bg-opacity-50 border rounded-md p-1"
+            className=" bg-black bg-opacity-50 border rounded-md p-1"
           />
           <br />
         </span>
         <span className=" ">
-          <label htmlFor="" className="mx-6">
+          <label htmlFor="" className="mx-4">
             Email:
           </label>
           <input
             type="email"
             placeholder="Enter your email"
-            className="mx-2 bg-black bg-opacity-50 border rounded-md p-1"
+            className=" bg-black bg-opacity-50 border rounded-md p-1"
           />
           <br />
         </span>
@@ -44,9 +44,9 @@ const Contact = () => {
           <textarea
             type=""
             rows="4"
-            cols="20"
+            cols="19"
             placeholder="Enter your message"
-            className="mx-2 bg-black bg-opacity-50 border rounded-md p-2"
+            className="mx-2 bg-black bg-opacity-50 border rounded-md p-2 "
           />
           <br />
         </span>

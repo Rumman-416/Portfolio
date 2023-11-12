@@ -37,7 +37,7 @@ const Start = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{ fontSize: ".6em", display: "inline-block" }}
+            style={{ fontSize: ".55em", display: "inline-block" }}
             repeat={Infinity}
             className="text-white mt-1 mb-10 p-1"
           />
