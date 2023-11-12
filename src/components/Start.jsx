@@ -10,18 +10,19 @@ const Start = () => {
   });
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
-  const textX = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
+  const textX = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const text_X = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
   return (
     <div
       ref={ref}
-      className="w-full h-screen overflow-hidden relative grid place-items-center"
+      className="w-full h-screen overflow-hidden relative grid place-items-center font-main"
     >
       <motion.div
         style={{ y: textY }}
         className=" font-bold text-white text-5xl relative z-10"
       >
-        <div className="w-full p-2 text-white text-center text-3xl mt-5">
-          Hi myself <span className="text-[#66fcf1]">Rumman Chowdhury</span>{" "}
+        <div className="w-full p-2 text-white text-center text-4xl mt-5">
+          Hi myself <span className="text-[#66fcf1]">Rumman Chowdhury</span>
           and,
         </div>
         <div className="flex justify-center flex-col items-center">
@@ -42,19 +43,39 @@ const Start = () => {
           />
         </div>
       </motion.div>
-      <motion.div
-        className=" absolute inset-0 z-0"
+      {/* <motion.div
+        className=" absolute inset-0 z-30"
         style={{
-          backgroundImage: `url(/StartImg/planet.png)`,
+          backgroundImage: `url(/StartImg/bldg.png)`,
+          backgroundPosition: "bottom",
+          backgroundSize: "cover",
+          x: textX,
+        }}
+      />
+      <motion.div
+        className=" absolute inset-0 z-30"
+        style={{
+          backgroundImage: `url(/StartImg/bldgL.png)`,
+          backgroundPosition: "bottom",
+          backgroundSize: "cover",
+          x: text_X,
+        }}
+      /> */}
+      <motion.div
+        className=" absolute inset-0  z-0"
+        style={{
+          backgroundImage: `url(/StartImg/bluespace.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           y: backgroundY,
+          backgroundAttachment: "fixed",
         }}
       />
+
       <div
-        className=" absolute inset-0 z-20"
+        className=" absolute inset-0  z-50"
         style={{
-          backgroundImage: `url(/StartImg/Subtract.png)`,
+          backgroundImage: `url(/StartImg/bottom.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
         }}

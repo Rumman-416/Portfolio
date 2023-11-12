@@ -23,6 +23,11 @@ export default {
         },
       },
     },
+    fontFamily: {
+      para: ["Comfortaa", "sans-serif"],
+      head: ["Ubuntu", "sans-serif"],
+      main: ["Allerta Stencil", "sans-serif"],
+    },
   },
   plugins: [],
 };

@@ -46,22 +46,31 @@ const Projects = () => {
     },
   ];
   return (
-    <div className=" flex justify-center">
-      <div className="flex justify-center items-center flex-col w-4/5">
-        <h1 className="text-3xl text-white">Projects</h1>
+    <div className=" flex justify-center ">
+      <div className="flex justify-center items-center flex-col w-4/5 ">
+        <h1 className="text-3xl text-white font-head">Projects</h1>
         {projectImg.map((projectContent) => (
-          <div
-            key={projectContent.id}
-            className=" bg-[#fff] bg-opacity-20  p-5 my-10 backdrop:blur-xl rounded-lg  "
-            style={{ boxShadow: "1.5px 1.5px 13px #66fcf1" }}
-          >
+          <div className="my-10">
             <Tilt options={defaultOptions} style={{}}>
-              <img src={projectContent.images} alt="" className="my-5" />
+              <img
+                key={projectContent.id}
+                src={projectContent.images}
+                alt=""
+                className="my-5"
+              />
             </Tilt>
-            <h1 className="text-[#45A29E] text-4xl my-5">
-              {projectContent.title}
-            </h1>
-            <p className=" text-white">{projectContent.description}</p>
+            <div
+              key={projectContent.id}
+              className=" bg-[#000] bg-opacity-50  p-5  backdrop:blur-xl rounded-lg  "
+              style={{ boxShadow: "1.7px 1.7px 15px #ff4b56" }}
+            >
+              <h1 className="text-[#ff4b56] text-4xl my-5">
+                {projectContent.title}
+              </h1>
+              <p className=" text-white font-para">
+                {projectContent.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>

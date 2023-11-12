@@ -1,4 +1,5 @@
 import Aboutme from "./components/Aboutme";
+import Contact from "./components/Contact";
 import First from "./components/First";
 import Lang from "./components/Lang";
 import Merger from "./components/Merger";
@@ -9,12 +10,11 @@ function App() {
   return (
     <div>
       <Start />
+      {/* <First /> */}
       <Aboutme />
       <Projects />
       <Lang />
-      {/* <Nav />
-      <First />
-       */}
+      <Contact />
     </div>
   );
 }
