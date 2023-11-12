@@ -17,13 +17,13 @@ const sliderSettings = {
 const AboutmeSlider = () => {
   return (
     <div className="p-8">
-      <div className="flex mt-20 flex-col border-2 rounded-xl ">
+      <div className="flex mt-20 flex-col  rounded-xl ">
         <img src={Limg} alt="" className="p-10 rounded-[50px]" />
         <div className="overflow-hidden">
           <Slider {...sliderSettings}>
             <div className="text-white  p-10 ">
-              <div className=" bg-purple-900 p-5 border-2 rounded-lg">
-                <h1 className="text-xl mb-5">About me</h1>
+              <h1 className=" mx-5 text-xl mb-5 text-[#66fcf1]">About me</h1>
+              <div className=" bg-[#45a29e] p-5 rounded-lg">
                 <span>
                   I'm Rumman Chowdhury, a web developer with a knack for
                   problem-solving and a passion for creating software. I thrive
@@ -34,8 +34,8 @@ const AboutmeSlider = () => {
               </div>
             </div>
             <div className="text-white  p-10 ">
-              <div className=" bg-purple-900 p-5 border-2 rounded-lg">
-                <h1 className="text-xl mb-5">Experience</h1>
+              <h1 className=" mx-5 text-xl mb-5 text-[#66fcf1]">Experience</h1>
+              <div className=" bg-[#45a29e] p-5  rounded-lg">
                 <span>
                   I've led diverse projects, spanning web development, web
                   design, game development, and computer applications. These
@@ -47,12 +47,12 @@ const AboutmeSlider = () => {
               </div>
             </div>
             <div className="text-white  p-10 ">
-              <div className=" bg-purple-900 p-5 border-2 rounded-lg">
-                <h1 className="text-xl mb-5">Education</h1>
+              <h1 className=" mx-5 text-xl mb-5 text-[#66fcf1]">Education</h1>
+              <div className=" bg-[#45A29E] p-5 rounded-lg">
                 <span>
-                  college:Guru Nanak College
+                  College : Guru Nanak College
                   <br />
-                  UG:Sahyog college
+                  UG : Sahyog college
                 </span>
               </div>
             </div>

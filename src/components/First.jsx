@@ -21,7 +21,7 @@ const First = () => {
         <img src={fimg} className="" />
       </div>
       <div className="w-full p-2 text-white text-center text-3xl mt-5">
-        Hi myself <span className="text-yellow-500">Rumman Chowdhury</span> and,
+        Hi myself <span className="text-[#e74c3c]">Rumman Chowdhury</span> and,
       </div>
       <div className="flex justify-center flex-col items-center">
         <TypeAnimation
