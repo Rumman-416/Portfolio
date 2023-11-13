@@ -1,6 +1,7 @@
 import Aboutme from "./components/Aboutme";
 import Contact from "./components/Contact";
 import First from "./components/First";
+import Info from "./components/Info";
 import Lang from "./components/Lang";
 import Merger from "./components/Merger";
 import Nav from "./components/Nav";
@@ -10,11 +11,13 @@ function App() {
   return (
     <div>
       <Start />
-      {/* <First /> */}
-      <Aboutme />
+      <Info />
       <Projects />
       <Lang />
       <Contact />
+      {/* 
+      <Aboutme />
+      {/* <First /> */}
     </div>
   );
 }

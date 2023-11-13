@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   ReactOriginalWordmark,
   NodejsOriginalWordmark,
@@ -11,44 +13,59 @@ import {
   CsharpOriginal,
   Html5OriginalWordmark,
   Css3Original,
+  TailwindcssPlain,
 } from "devicons-react";
 
 const Lang = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  });
   return (
     <div>
-      <div className=" font-head flex gap-5 flex justify-center">
-        <button
-          className="text-lg bg-[#ff4b56] h-10 p-2 flex items-center justify-center  rounded-lg border border-[#ff4b56] hover:bg-transparent hover:text-white"
-          style={{ boxShadow: "1.7px 1.7px 15px #ff4b56" }}
-        >
-          Download Resume 📋
-        </button>
-
-        <a href="https://github.com/Rumman-416">
-          <button
-            className=" text-lg bg-yellow-400 h-10 w-22 p-2 flex items-center justify-center rounded-lg hover:bg-transparent hover:text-white"
-            style={{ boxShadow: "1.7px 1.7px 15px #facc15" }}
-          >
-            Git <img src="./StartImg/github1.png" className="h-7 px-3" />
-          </button>
-        </a>
-      </div>
       <div className="flex justify-center flex-col items-center h-52 my-28">
-        <h1 className="text-white text-3xl font-head mb-10">known Languages</h1>
-        <div className="flex gap-5 flex-wrap justify-center w-[80%]">
-          <ReactOriginalWordmark size="60" />
-          <NodejsOriginalWordmark size="60" />
-          <MongodbOriginalWordmark size="60" />
-          <div className=" bg-white">
+        <h1 className=" text-3xl font-head mb-10 text-[#ff4b56]">
+          KNOWN LANGUAGES
+        </h1>
+        <div
+          className="flex gap-5 flex-wrap justify-center w-[80%]"
+          data-aos="fade-up"
+        >
+          <div className="  hover:scale-125">
+            <ReactOriginalWordmark size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <NodejsOriginalWordmark size="60" />
+          </div>
+          <div className=" hover:scale-125">
+            <MongodbOriginalWordmark size="60" />
+          </div>
+          <div className=" bg-white hover:scale-125">
             <ExpressOriginal size="60" />
           </div>
-          <JavascriptOriginal size="60" />
-          <MysqlOriginalWordmark size="60" />
-          <JavaOriginalWordmark size="60" />
-          <COriginal size="60" />
-          <CsharpOriginal size="60" />
-          <Html5OriginalWordmark size="60" />
-          <Css3Original size="60" />
+          <div className="  hover:scale-125">
+            <TailwindcssPlain size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <JavascriptOriginal size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <MysqlOriginalWordmark size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <JavaOriginalWordmark size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <COriginal size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <CsharpOriginal size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <Html5OriginalWordmark size="60" />
+          </div>
+          <div className="  hover:scale-125">
+            <Css3Original size="60" />
+          </div>
         </div>
       </div>
     </div>
