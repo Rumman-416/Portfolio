@@ -8,11 +8,14 @@ const Info = () => {
     Aos.init({ duration: 1000 });
   });
   return (
-    <div className="flex flex-col m-7 lg:flex-row lg:justify-center ">
+    <div
+      id="about"
+      className="flex flex-col m-7 lg:flex-row lg:justify-center "
+    >
       <img
         src="./webImg/info.png"
         alt=""
-        className=" p-10 lg:max-h-[30rem] lg:max-w-[30rem]"
+        className=" p-10 md:p-28 lg:p-10 lg:max-h-[30rem] lg:max-w-[30rem]"
       />
       <div className="flex flex-col gap-5 lg:max-w-[40rem] lg:mt-20">
         <div data-aos="fade-up">

@@ -18,35 +18,41 @@ const Projects = () => {
     {
       id: 1,
       images: "./project_image/deadRunner.png",
-      title: "anything",
+      title: "Game Development",
+      Languages: "Unity 3D Engine,C#",
       description:
-        "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Dead Runners, an exhilarating Unity 3D game reminiscent of Subway Surfers, pushes players to navigate obstacles while sprinting. Playable on Android and desktop, this dynamic experience reflects my passion for game development and cross-platform accessibility. Notably, it clinched victory in two competitions, showcasing its impact and recognition.",
     },
     {
       id: 2,
       images: "./project_image/india.png",
-      title: "anything",
+      title: "Web Development",
+      Languages: "Html,Css,Js",
+
       description:
-        "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Namaste India, my award-winning website, beautifully showcases the rich heritage, culture, and wonders of India. Crafted with HTML, CSS, and JS, its stunning design and visual effects secured first place in a prestigious website design competition, reflecting my passion for blending technology with creativity.",
     },
     {
       id: 3,
       images: "./project_image/movie.png",
-      title: "anything",
+      title: "Web Application",
+      Languages: "Vb.net",
+
       description:
-        "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Experience seamless movie booking with 'Movie Dekho,' a VB.NET web application. Book seats, purchase beverages, and explore movie details, including descriptions and trailers. This user-friendly platform integrates convenience into your cinematic journey, enhancing the way you enjoy movies.",
     },
     {
       id: 4,
       images: "./project_image/spotify.png",
-      title: "anything",
+      title: "Web Development",
+      Languages: "Html,Css,Js",
 
       description:
-        "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Discover and download music seamlessly with my Spotify clone. This HTML, CSS, and JS-powered web application offers a diverse collection of artists and genres, providing a user-friendly experience akin to the popular music streaming platform.",
     },
   ];
   return (
-    <div className=" flex justify-center ">
+    <div id="project" className=" flex justify-center ">
       <div className="flex justify-center items-center flex-col w-4/5 ">
         <h1 className="text-4xl text-[#ff4b56] font-head ">PROJECTS</h1>
         {projectImg.map((projectContent) => (
@@ -68,6 +74,10 @@ const Projects = () => {
                 <h1 className="text-[#ff4b56] text-4xl my-5">
                   {projectContent.title}
                 </h1>
+                <h1 className="text-[#ff4b56] text-xl my-4">
+                  Languages/Technologies:-{projectContent.Languages}
+                </h1>
+
                 <p className=" text-white font-para">
                   {projectContent.description}
                 </p>

@@ -14,6 +14,7 @@ const Start = () => {
   const text_X = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
   return (
     <div
+      id="start"
       ref={ref}
       className="w-full h-screen overflow-hidden relative grid place-items-center font-main "
     >
