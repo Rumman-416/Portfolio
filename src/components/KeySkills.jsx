@@ -35,17 +35,15 @@ const KeySkills = () => {
   return (
     <div>
       <div className=" p-8 flex  flex-col  rounded-xl  ">
-        <h1 className=" text-4xl text-[#fff] text-center lg:mb-5">
-          Key Skills
-        </h1>
+        <h1 className=" text-4xl text-[#fff] text-center ">KEY SKILLS</h1>
         {isScroller ? (
           <div className="overflow-hidden">
             <Slider {...sliderSettings}>
               <div className="text-white flex justify-center items-center p-10 md:p-40 md:w-2/6">
-                <h1 className=" mx-5 text-3xl mb-5 text-[#ff4b56] font-head  text-center">
-                  Web design
-                </h1>
                 <div className=" bg-[#ff4b56] p-5 rounded-lg flex flex-col justify-center items-center">
+                  <h1 className=" mx-5 text-3xl mb-5 text-[#23253a] font-head  text-center">
+                    Web design
+                  </h1>
                   <img
                     src="./webImg/s1.png"
                     alt=""
@@ -60,10 +58,10 @@ const KeySkills = () => {
                 </div>
               </div>
               <div className="text-white flex flex-col justify-center items-center p-10 md:p-40 md:w-2/6">
-                <h1 className=" mx-1 text-3xl mb-5 text-[#ff4b56] text-center font-head">
-                  Web Development
-                </h1>
                 <div className=" bg-[#ff4b56] p-5  rounded-lg flex flex-col justify-center items-center">
+                  <h1 className=" mx-1 text-3xl mb-5 text-[#23253a] text-center font-head">
+                    Web Development
+                  </h1>
                   <img
                     src="./webImg/s2.png"
                     alt=""
@@ -78,10 +76,10 @@ const KeySkills = () => {
                 </div>
               </div>
               <div className="text-white flex flex-col justify-center items-center p-10 md:p-40 md:w-2/6">
-                <h1 className=" mx-5 text-3xl mb-5 text-[#ff4b56] font-head text-center">
-                  Adaptiveness
-                </h1>
                 <div className=" bg-[#ff4b56] p-5 rounded-lg flex flex-col justify-center items-center">
+                  <h1 className=" mx-5 text-3xl mb-5 text-[#23253a] font-head text-center">
+                    Adaptiveness
+                  </h1>
                   <img
                     src="./webImg/s3.png"
                     alt=""
