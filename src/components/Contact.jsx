@@ -3,16 +3,47 @@ import emailjs from "emailjs-com";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      "service_huane2n",
-      "template_9uj7ult",
-      e.target,
-      "PkpEyBmnM1Ul5ZE34"
-    );
+    emailjs
+      .sendForm(
+        "service_huane2n",
+        "template_9uj7ult",
+        e.target,
+        "PkpEyBmnM1Ul5ZE34"
+      )
+      .then(
+        () => {
+          toast.success("👍 message sent successfully!", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        },
+        (error) => {
+          toast.error("💀 Error occured!", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          console.log(error);
+        }
+      );
+    e.target.reset();
   };
   return (
     <div
@@ -104,6 +135,7 @@ const Contact = () => {
             >
               Send
             </button>
+            <ToastContainer />
           </form>
           <img
             src="./webImg/earth.png"
