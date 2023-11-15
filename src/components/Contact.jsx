@@ -40,7 +40,6 @@ const Contact = () => {
             progress: undefined,
             theme: "dark",
           });
-          console.log(error);
         }
       );
     e.target.reset();
