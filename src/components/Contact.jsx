@@ -29,7 +29,7 @@ const Contact = () => {
             theme: "dark",
           });
         },
-        (error) => {
+        () => {
           toast.error("💀 Error occured!", {
             position: "top-center",
             autoClose: 5000,
@@ -40,6 +40,7 @@ const Contact = () => {
             progress: undefined,
             theme: "dark",
           });
+
         }
       );
     e.target.reset();

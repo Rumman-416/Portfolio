@@ -1,20 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import {
-  ReactOriginalWordmark,
-  NodejsOriginalWordmark,
-  MongodbOriginalWordmark,
-  ExpressOriginal,
-  JavascriptOriginal,
-  MysqlOriginalWordmark,
-  JavaOriginalWordmark,
-  COriginal,
-  CsharpOriginal,
-  Html5OriginalWordmark,
-  Css3Original,
-  TailwindcssPlain,
-} from "devicons-react";
+
 
 const Lang = () => {
   useEffect(() => {
@@ -31,40 +18,50 @@ const Lang = () => {
           data-aos="fade-up"
         >
           <div className="  hover:scale-125">
-            <ReactOriginalWordmark size="60" />
+            <img src="./Logo/react.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-            <NodejsOriginalWordmark size="60" />
+            <img src="./Logo/njs.png" alt="" />
           </div>
           <div className=" hover:scale-125">
-            <MongodbOriginalWordmark size="60" />
+          <img src="./Logo/mdb.png" alt=""className=" h-10" />
+            
           </div>
           <div className=" bg-white hover:scale-125">
-            <ExpressOriginal size="60" />
+          <img src="./Logo/ex.png" alt="" />
+            
           </div>
           <div className="  hover:scale-125">
-            <TailwindcssPlain size="60" />
+          <img src="./Logo/html.png" alt="" />
+            
           </div>
           <div className="  hover:scale-125">
-            <JavascriptOriginal size="60" />
+          <img src="./Logo/css.png" alt="" />
+            
           </div>
           <div className="  hover:scale-125">
-            <MysqlOriginalWordmark size="60" />
+          <img src="./Logo/js.png" alt="" />
+          
           </div>
           <div className="  hover:scale-125">
-            <JavaOriginalWordmark size="60" />
+          <img src="./Logo/tailwind.png" alt="" />
+           
           </div>
           <div className="  hover:scale-125">
-            <COriginal size="60" />
+          <img src="./Logo/c.png" alt="" />
+
           </div>
           <div className="  hover:scale-125">
-            <CsharpOriginal size="60" />
+          <img src="./Logo/cp.png" alt="" />
+
           </div>
           <div className="  hover:scale-125">
-            <Html5OriginalWordmark size="60" />
+          <img src="./Logo/csharp.png" alt="" />
+
           </div>
           <div className="  hover:scale-125">
-            <Css3Original size="60" />
+          <img src="./Logo/mysql.png" alt="" />
+
           </div>
         </div>
       </div>

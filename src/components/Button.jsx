@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+
 const Button = () => {
   const onButtonClick = () => {
     const pdfUrl = "./Resume/Rumman_resume.pdf";
@@ -27,7 +27,7 @@ const Button = () => {
             className=" text-lg bg-yellow-400 h-10 w-22 p-2 flex items-center justify-center rounded-lg hover:bg-transparent hover:text-white"
             style={{ boxShadow: "1px 1px 5px #facc15" }}
           >
-            Git <FaGithub className=" h-7 w-7" />
+            Git <img src="./Logo/github.png" alt="" />
           </button>
         </a>
       </div>
