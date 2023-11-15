@@ -52,36 +52,31 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="project" className=" flex justify-center ">
-      <div className="flex justify-center items-center flex-col w-4/5 ">
-        <h1 className="text-4xl text-[#ff4b56] font-head ">PROJECTS</h1>
+    <div id="project" className="flex justify-center">
+      <div className="flex justify-center items-center flex-col w-4/5">
+        <h1 className="text-4xl text-[#ff4b56] font-head">PROJECTS</h1>
         {projectImg.map((projectContent) => (
-          <div className="my-10 xl:flex xl:w-10/12">
+          <div key={projectContent.id} className="my-10 xl:flex xl:w-10/12">
             <Tilt options={defaultOptions} style={{}}>
               <img
-                key={projectContent.id}
                 src={projectContent.images}
                 alt=""
                 className="my-5 xl:w-[350rem]"
               />
             </Tilt>
-            <div className="flex items-center">
-              <div
-                key={projectContent.id}
-                className=" bg-[#000] bg-opacity-50  p-5  backdrop:blur-xl rounded-lg xl:mx-10 lg:h-auto xl:h-auto"
-                style={{ boxShadow: "1.7px 1.7px 15px #ff4b56" }}
-              >
-                <h1 className="text-[#ff4b56] text-4xl my-5">
-                  {projectContent.title}
-                </h1>
-                <h1 className="text-[#ff4b56] text-xl my-4">
-                  Languages/Technologies:-{projectContent.Languages}
-                </h1>
-
-                <p className=" text-white font-para">
-                  {projectContent.description}
-                </p>
-              </div>
+            <div
+              className="bg-[#000] bg-opacity-50 p-5 backdrop:blur-xl rounded-lg xl:mx-10 lg:h-auto xl:h-auto"
+              style={{ boxShadow: "1.7px 1.7px 15px #ff4b56" }}
+            >
+              <h1 className="text-[#ff4b56] text-4xl my-5">
+                {projectContent.title}
+              </h1>
+              <h1 className="text-[#ff4b56] text-xl my-4">
+                Languages/Technologies:-{projectContent.Languages}
+              </h1>
+              <p className="text-white font-para">
+                {projectContent.description}
+              </p>
             </div>
           </div>
         ))}
