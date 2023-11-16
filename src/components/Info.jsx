@@ -17,9 +17,9 @@ const Info = () => {
         alt=""
         className=" p-10 md:p-28 lg:p-10 lg:max-h-[30rem] lg:max-w-[30rem]"
       />
-      <div className="flex flex-col gap-5 lg:max-w-[40rem] lg:mt-20">
+      <div className="flex flex-col gap-5 lg:max-w-[40rem] lg:mt-20 ">
         <div data-aos="fade-up">
-          <div className=" flex flex-col items-center text-white px-10 py-4 overflow-hidden h-16 bg-[#ff4b56] bg-opacity-10 rounded-2xl border border-[#ff4b56] transition-all duration-1000 hover:h-[26rem] md:mx-20 md:hover:h-[18rem] lg:hover:h-[23rem] xl:hover:h-[20]">
+          <div className="text-sm mp:text-[1rem] flex flex-col items-center text-white px-10 py-4 overflow-hidden h-16 bg-[#ff4b56] bg-opacity-10 rounded-2xl border border-[#ff4b56]  mp:hover:h-[23rem] transition-all duration-1000 md:mx-20 md:hover:h-[18rem] lg:hover:h-[23rem] xl:hover:h-[20] xl:text-lg">
             <h1 className=" mx-5 text-3xl mb-5 text-[#ff4b56] font-head h">
               About me
             </h1>
@@ -35,24 +35,23 @@ const Info = () => {
           </div>
         </div>
         <div data-aos="fade-up">
-          <div className=" flex flex-col items-center text-white px-10 py-4 overflow-hidden h-16 bg-[#ff4b56] bg-opacity-10 rounded-2xl border border-[#ff4b56] transition-all duration-500 hover:h-[30rem] md:mx-20 md:hover:h-[18rem] lg:hover:h-[25rem]">
+          <div className=" text-sm mp:text-[1rem] flex flex-col items-center text-white px-10 py-4 overflow-hidden h-16 bg-[#ff4b56] bg-opacity-10 rounded-2xl border border-[#ff4b56] transition-all duration-500 mp:hover:h-[24rem] md:mx-20 md:hover:h-[18rem] lg:hover:h-[25rem] xl:text-lg">
             <h1 className=" mx-5 text-3xl mb-5 text-[#ff4b56] font-head ">
               Experience
             </h1>
             <div className=" bg-[#ff4b56] p-5  rounded-lg">
               <span className=" font-para">
-                I've led diverse projects, spanning web development, web design,
-                game development, and computer applications. These experiences
-                have nurtured my leadership abilities and my passion for
-                creating software. It's a world where problem-solving and
-                innovation drive me, much like the thrill of playing football on
-                the field.
+                I've led diverse projects in web development, design, game
+                development, and computer applications. These experiences honed
+                my leadership skills and fueled my passion for software
+                creation. Problem-solving and innovation in this realm excite
+                me, reminiscent of the thrill on a football field.
               </span>
             </div>
           </div>
         </div>
         <div data-aos="fade-up">
-          <div className=" flex flex-col items-center text-white px-10 py-4 overflow-hidden h-16 bg-[#ff4b56] bg-opacity-10 rounded-2xl border border-[#ff4b56] transition-all duration-500 hover:h-[14rem] md:mx-20 md:hover:h-[12rem]">
+          <div className="flex flex-col items-center text-white px-10 py-4 overflow-hidden h-16 bg-[#ff4b56] bg-opacity-10 rounded-2xl border border-[#ff4b56] transition-all duration-500 hover:h-[14rem] md:mx-20 md:hover:h-[12rem]">
             <h1 className=" mx-5 text-3xl mb-5 text-[#ff4b56] font-head ">
               Education
             </h1>

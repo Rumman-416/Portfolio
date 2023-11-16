@@ -56,7 +56,10 @@ const Projects = () => {
       <div className="flex justify-center items-center flex-col w-4/5">
         <h1 className="text-4xl text-[#ff4b56] font-head">PROJECTS</h1>
         {projectImg.map((projectContent) => (
-          <div key={projectContent.id} className="my-10 xl:flex xl:w-10/12">
+          <div
+            key={projectContent.id}
+            className="my-10 xl:flex xl:w-10/12 xl:justify-center xl:items-center "
+          >
             <Tilt options={defaultOptions} style={{}}>
               <img
                 src={projectContent.images}

@@ -40,7 +40,6 @@ const Contact = () => {
             progress: undefined,
             theme: "dark",
           });
-
         }
       );
     e.target.reset();
@@ -140,7 +139,7 @@ const Contact = () => {
           <img
             src="./webImg/earth.png"
             alt="img"
-            className=" opacity-0 h-0 w-0 xl:opacity-100 xl:w-[23rem] xl:h-[23rem] lg:"
+            className=" opacity-0 h-0 w-0 xl:opacity-100 xl:w-[23rem] xl:h-[23rem] relative bottom-8"
           />
         </div>
       </div>
