@@ -23,7 +23,7 @@ const Start = () => {
         className=" font-bold text-[#23253a] text-5xl relative z-20"
       >
         <div className="lg:relative bottom-28">
-          <div className="w-full p-2 text- text-center text-4xl mt-5">
+          <div className="w-full p-2 text- text-center text-4xl xl:text-3xl mt-5">
             Hi myself <span className="text-[#ff4b56]">Rumman Chowdhury</span>
             and,
           </div>
