@@ -30,9 +30,7 @@ const Start = () => {
           <div className="flex justify-center flex-col items-center">
             <TypeAnimation
               sequence={[
-                "I am a FrontEnd Developer",
-                1000,
-                "I am a BackEnd Developer",
+                "I am a Fullstack Developer",
                 1000,
                 "I am a Web Designer",
                 1000,
