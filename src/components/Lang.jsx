@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const Lang = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -24,44 +23,31 @@ const Lang = () => {
             <img src="./Logo/njs.png" alt="" />
           </div>
           <div className=" hover:scale-125">
-          <img src="./Logo/mdb.png" alt=""className=" h-10" />
-            
+            <img src="./Logo/mdb.png" alt="" className=" h-10" />
           </div>
           <div className=" bg-white hover:scale-125">
-          <img src="./Logo/ex.png" alt="" />
-            
+            <img src="./Logo/ex.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-          <img src="./Logo/html.png" alt="" />
-            
+            <img src="./Logo/html.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-          <img src="./Logo/css.png" alt="" />
-            
+            <img src="./Logo/css.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-          <img src="./Logo/js.png" alt="" />
-          
+            <img src="./Logo/js.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-          <img src="./Logo/tailwind.png" alt="" />
-           
+            <img src="./Logo/tailwind.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-          <img src="./Logo/c.png" alt="" />
-
+            <img src="./Logo/c.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-          <img src="./Logo/cp.png" alt="" />
-
+            <img src="./Logo/cp.png" alt="" />
           </div>
           <div className="  hover:scale-125">
-          <img src="./Logo/csharp.png" alt="" />
-
-          </div>
-          <div className="  hover:scale-125">
-          <img src="./Logo/mysql.png" alt="" />
-
+            <img src="./Logo/mysql.png" alt="" />
           </div>
         </div>
       </div>
