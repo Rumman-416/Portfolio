@@ -21,11 +21,6 @@ const Burger = () => {
             isExpanded ? " -rotate-[20deg]" : " rotate-[20deg] w-13"
           }`}
         ></div>
-        {/* <div
-          className={`h-1 w-7 mr-4 bg-white outline-purple-50${
-            isExpanded ? " opacity-0" : ""
-          }`}
-        ></div> */}
         <div
           className={`h-1 w-6 bg-white transform transition-transform${
             isExpanded ? " rotate-[20deg]" : " -rotate-[20deg] w-13"
