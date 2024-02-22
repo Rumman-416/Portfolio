@@ -60,22 +60,30 @@ const Projects = () => {
       description:
         "Dead Runners, an exhilarating Unity 3D game reminiscent of Subway Surfers, pushes players to navigate obstacles while sprinting. Playable on Android and desktop, this dynamic experience reflects my passion for game development and cross-platform accessibility. Notably, it clinched victory in two competitions, showcasing its impact and recognition.",
     },
+    {
+      id: 6,
+      images: "./project_image/noEscape.png",
+      title: "Game Development",
+      Languages: "Unity 3D Engine,C#",
+      type: "gamedev",
+      description:
+        "No Escape triumphed as the runner-up in a fiercely competitive college game development competition. With its immersive storyline and captivating gameplay, players delve into a haunted house, racing against time to unlock mysteries, find keys, and evade the chilling presence of a vengeful ghost to secure their ultimate escape.",
+    },
   ];
 
   const [isExpanded, setExpanded] = useState(false);
   const [filteredProjects, setFilteredProjects] = useState(projectImg);
-  const [activeButton, setActiveButton] = useState(null); // State variable to track active button
+  const [activeButton, setActiveButton] = useState(null);
 
   const filterProjects = (type) => {
     const filtered = projectImg.filter((project) => project.type === type);
     setFilteredProjects(filtered);
     setExpanded(true);
-    setActiveButton(type); // Set the active button
+    setActiveButton(type);
   };
   useEffect(() => {
-    // Filter projects when component mounts to show only webdev projects
     filterProjects("webdev");
-  }, []); // Empty dependency array to ensure effect runs only once
+  }, []);
 
   return (
     <div id="project" className="flex justify-center">
