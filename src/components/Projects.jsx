@@ -17,11 +17,11 @@ const Projects = () => {
   const projectImg = [
     {
       id: 1,
-      images: "./project_image/deadRunner.png",
-      title: "Game Development",
-      Languages: "Unity 3D Engine,C#",
+      images: "./project_image/finance.png",
+      title: "FullStack Development",
+      Languages: "MERN, TAilwind",
       description:
-        "Dead Runners, an exhilarating Unity 3D game reminiscent of Subway Surfers, pushes players to navigate obstacles while sprinting. Playable on Android and desktop, this dynamic experience reflects my passion for game development and cross-platform accessibility. Notably, it clinched victory in two competitions, showcasing its impact and recognition.",
+        "Introducing a finance tracker built with the MERN stack, designed to streamline financial management. This comprehensive tool not only helps you manage your finances but also leverages current data to predict future expenses. Additionally, it intelligently suggests insurance options tailored to your income, providing a holistic approach to financial well-being.",
     },
     {
       id: 2,
@@ -49,6 +49,14 @@ const Projects = () => {
 
       description:
         "Discover and download music seamlessly with my Spotify clone. This HTML, CSS, and JS-powered web application offers a diverse collection of artists and genres, providing a user-friendly experience akin to the popular music streaming platform.",
+    },
+    {
+      id: 5,
+      images: "./project_image/deadRunner.png",
+      title: "Game Development",
+      Languages: "Unity 3D Engine,C#",
+      description:
+        "Dead Runners, an exhilarating Unity 3D game reminiscent of Subway Surfers, pushes players to navigate obstacles while sprinting. Playable on Android and desktop, this dynamic experience reflects my passion for game development and cross-platform accessibility. Notably, it clinched victory in two competitions, showcasing its impact and recognition.",
     },
   ];
   return (
