@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 
 const defaultOptions = {
@@ -20,6 +20,7 @@ const Projects = () => {
       images: "./project_image/finance.png",
       title: "FullStack Development",
       Languages: "MERN, TAilwind",
+      type: "webdev",
       description:
         "Introducing a finance tracker built with the MERN stack, designed to streamline financial management. This comprehensive tool not only helps you manage your finances but also leverages current data to predict future expenses. Additionally, it intelligently suggests insurance options tailored to your income, providing a holistic approach to financial well-being.",
     },
@@ -28,7 +29,7 @@ const Projects = () => {
       images: "./project_image/india.png",
       title: "Web Development",
       Languages: "Html,Css,Js",
-
+      type: "webdev",
       description:
         "Namaste India, my award-winning website, beautifully showcases the rich heritage, culture, and wonders of India. Crafted with HTML, CSS, and JS, its stunning design and visual effects secured first place in a prestigious website design competition, reflecting my passion for blending technology with creativity.",
     },
@@ -37,7 +38,7 @@ const Projects = () => {
       images: "./project_image/movie.png",
       title: "Web Application",
       Languages: "Vb.net",
-
+      type: "webdev",
       description:
         "Experience seamless movie booking with 'Movie Dekho,' a VB.NET web application. Book seats, purchase beverages, and explore movie details, including descriptions and trailers. This user-friendly platform integrates convenience into your cinematic journey, enhancing the way you enjoy movies.",
     },
@@ -46,7 +47,7 @@ const Projects = () => {
       images: "./project_image/spotify.png",
       title: "Web Development",
       Languages: "Html,Css,Js",
-
+      type: "webdev",
       description:
         "Discover and download music seamlessly with my Spotify clone. This HTML, CSS, and JS-powered web application offers a diverse collection of artists and genres, providing a user-friendly experience akin to the popular music streaming platform.",
     },
@@ -55,15 +56,54 @@ const Projects = () => {
       images: "./project_image/deadRunner.png",
       title: "Game Development",
       Languages: "Unity 3D Engine,C#",
+      type: "gamedev",
       description:
         "Dead Runners, an exhilarating Unity 3D game reminiscent of Subway Surfers, pushes players to navigate obstacles while sprinting. Playable on Android and desktop, this dynamic experience reflects my passion for game development and cross-platform accessibility. Notably, it clinched victory in two competitions, showcasing its impact and recognition.",
     },
   ];
+
+  const [isExpanded, setExpanded] = useState(false);
+  const [filteredProjects, setFilteredProjects] = useState(projectImg);
+  const [activeButton, setActiveButton] = useState(null); // State variable to track active button
+
+  const filterProjects = (type) => {
+    const filtered = projectImg.filter((project) => project.type === type);
+    setFilteredProjects(filtered);
+    setExpanded(true);
+    setActiveButton(type); // Set the active button
+  };
+  useEffect(() => {
+    // Filter projects when component mounts to show only webdev projects
+    filterProjects("webdev");
+  }, []); // Empty dependency array to ensure effect runs only once
+
   return (
     <div id="project" className="flex justify-center">
       <div className="flex justify-center items-center flex-col w-4/5">
         <h1 className="text-4xl text-[#ff4b56] font-head">PROJECTS</h1>
-        {projectImg.map((projectContent) => (
+        <div className="flex justify-center items-center gap-20 m-10">
+          <button
+            className={`border-[#ff4b56] border-2 text-white w-32 h-12 rounded-xl ${
+              activeButton === "webdev"
+                ? "bg-[#ff4b56] text-white"
+                : "text-[#ff4b56] "
+            }`}
+            onClick={() => filterProjects("webdev")}
+          >
+            Web Dev
+          </button>
+          <button
+            className={`border-[#ff4b56] border-2 text-white w-32 h-12 rounded-xl ${
+              activeButton === "gamedev"
+                ? "bg-[#ff4b56] text-white"
+                : "text-[#ff4b56] "
+            }`}
+            onClick={() => filterProjects("gamedev")}
+          >
+            Game Dev
+          </button>
+        </div>
+        {filteredProjects.map((projectContent) => (
           <div
             key={projectContent.id}
             className="my-10 xl:flex xl:w-10/12 xl:justify-center xl:items-center "
